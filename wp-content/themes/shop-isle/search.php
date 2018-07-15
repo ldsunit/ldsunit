@@ -44,7 +44,7 @@ get_header(); ?>
 		<div class="row">
 
 			<!-- Content column start -->
-			<div class="col-sm-8 shop-isle-page-content">
+			<div class="col-sm-12 shop-isle-page-content">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -58,11 +58,11 @@ get_header(); ?>
 
 			</div><!-- Content column end -->
 			<!-- Sidebar column start -->
-			<div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
-
-				<?php do_action( 'shop_isle_sidebar' ); ?>
-
-			</div>
+<!--			<div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">-->
+<!---->
+<!--				--><?php //do_action( 'shop_isle_sidebar' ); ?>
+<!---->
+<!--			</div>-->
 			<!-- Sidebar column end -->
 		</div><!-- .row -->
 

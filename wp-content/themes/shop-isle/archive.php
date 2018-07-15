@@ -52,7 +52,7 @@
 			<div class="row">
 
 				<!-- Content column start -->
-				<div class="col-sm-8 shop-isle-page-content">
+				<div class="col-sm-12 shop-isle-page-content">
 					<?php
 
 					while ( have_posts() ) {
@@ -93,11 +93,11 @@
 									</div>
 
 									<?php
-									if ( ! $shop_isleismore ) {
-										echo '<div class="post-more">';
-										echo '<a href="' . esc_url( get_permalink() ) . '" class="more-link">' . esc_html__( 'Read more', 'shop-isle' ) . '</a>';
-										echo '</div>';
-									}
+//									if ( ! $shop_isleismore ) {
+//										echo '<div class="post-more">';
+//										echo '<a href="' . esc_url( get_permalink() ) . '" class="more-link">' . esc_html__( 'Read more', 'shop-isle' ) . '</a>';
+//										echo '</div>';
+//									}
 									?>
 
 								</div>
@@ -117,11 +117,11 @@
 						<!-- Content column end -->
 
 						<!-- Sidebar column start -->
-						<div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
-
-						<?php do_action( 'shop_isle_sidebar' ); ?>
-
-						</div>
+<!--						<div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">-->
+<!---->
+<!--						--><?php //do_action( 'shop_isle_sidebar' ); ?>
+<!---->
+<!--						</div>-->
 						<!-- Sidebar column end -->
 
 					</div><!-- .row -->

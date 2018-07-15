@@ -2727,7 +2727,9 @@ Sections
 	background-size: cover;
 }
 
-.module.thin {
+.module.thin,
+.module.page-module-header,
+.module.bg-dark {
 	padding: 110px 0 10px 0;
 }
 
