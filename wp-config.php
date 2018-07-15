@@ -18,26 +18,41 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-$url = parse_url(getenv('DATABASE_URL') ? getenv('DATABASE_URL') : getenv('CLEARDB_DATABASE_URL'));
+if (getenv('APP_ENV') == 'development') {
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'lds_unit');
 
-/** The name of the database for WordPress */
-define('DB_NAME', trim($url['path'], '/'));
+    /** MySQL database username */
+    define('DB_USER', 'root');
 
-/** MySQL database username */
-define('DB_USER', $url['user']);
+    /** MySQL database password */
+    define('DB_PASSWORD', '');
 
-/** MySQL database password */
-define('DB_PASSWORD', $url['pass']);
+    /** MySQL hostname */
+    define('DB_HOST', '127.0.0.1');
+} else {
+    // ** MySQL settings - You can get this info from your web host ** //
+    $url = parse_url(getenv('DATABASE_URL') ? getenv('DATABASE_URL') : getenv('CLEARDB_DATABASE_URL'));
 
-/** MySQL hostname */
-define('DB_HOST', $url['host']);
+    /** The name of the database for WordPress */
+    define('DB_NAME', trim($url['path'], '/'));
+
+    /** MySQL database username */
+    define('DB_USER', $url['user']);
+
+    /** MySQL database password */
+    define('DB_PASSWORD', $url['pass']);
+
+    /** MySQL hostname */
+    define('DB_HOST', $url['host']);
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -79,7 +94,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
