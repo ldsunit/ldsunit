@@ -296,14 +296,6 @@ function shop_isle_scripts() {
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css', array(), '20120208', 'all' );
 
-	wp_enqueue_style( 'magnific-popup', get_template_directory_uri() . '/assets/css/vendor/magnific-popup.min.css', array(), '20120208', 'all' );
-
-	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/assets/css/vendor/flexslider.min.css', array( 'magnific-popup' ), '20120208', 'all' );
-
-	wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/assets/css/vendor/owl.carousel.min.css', array( 'flexslider' ), '2.1.7', 'all' );
-
-	wp_enqueue_style( 'shop-isle-animate', get_template_directory_uri() . '/assets/css/vendor/animate.min.css', array( 'owl-carousel' ), '20120208', 'all' );
-
 	wp_enqueue_style( 'shop-isle-main-style', get_template_directory_uri() . '/assets/css/style.css', array( 'bootstrap' ), SI_VERSION, 'all' );
 
 	wp_enqueue_style( 'shop-isle-style', get_stylesheet_uri(), '', SI_VERSION );
@@ -317,19 +309,12 @@ function shop_isle_scripts() {
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '20120208', true );
 
+
+//	DO NOT DELETE THESE EVEN IF THEY AREN'T LOADING vvvvvvvvvvvvvvvvvvvv:
 	wp_enqueue_script( 'jquery-mb-YTPlayer', get_template_directory_uri() . '/assets/js/vendor/jquery.mb.YTPlayer.min.js', array( 'jquery' ), '20120208', true );
-
-	wp_enqueue_script( 'jqBootstrapValidation', get_template_directory_uri() . '/assets/js/vendor/jqBootstrapValidation.min.js', array( 'jquery' ), '20120208', true );
-
 	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/assets/js/vendor/jquery.flexslider-min.js', array( 'jquery' ), '20120208', true );
+//	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/vendor/jquery.magnific-popup.min.js', array( 'jquery' ), '20120208', true );
-
-	wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/assets/js/vendor/jquery.fitvids.min.js', array( 'jquery' ), '20120208', true );
-
-	wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/assets/js/vendor/smoothscroll.min.js', array( 'jquery' ), '20120208', true );
-
-	wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/assets/js/vendor/owl.carousel.min.js', array( 'jquery' ), '2.1.8', true );
 
 	wp_enqueue_script( 'shop-isle-custom', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery', 'flexslider', 'jquery-mb-YTPlayer' ), '20180411', true );
 

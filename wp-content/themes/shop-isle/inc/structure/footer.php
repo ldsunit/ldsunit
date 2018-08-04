@@ -97,8 +97,8 @@ if ( ! function_exists( 'shop_isle_footer_copyright_and_socials' ) ) {
 
 					/* Socials icons */
 					echo '<div class="col-sm-12"><div class="copyright">Copyright ©';
-                    echo date("Y");
-                    echo ' LDS Unit</div></div>';
+                    echo date("Y ");
+                    echo get_bloginfo( 'name' ) .'</div></div>';
 					?>
 				</div><!-- .row -->
 

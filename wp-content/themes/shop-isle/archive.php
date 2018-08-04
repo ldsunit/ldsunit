@@ -73,34 +73,7 @@
 
 							<div class="post-header font-alt">
 								<h2 class="post-title entry-title"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
-								<div class="post-meta">
-									<?php
-									shop_isle_posted_on();
-									?>
-
-									</div>
-									</div>
-
-									<div class="post-entry entry-content">
-									<?php
-									$shop_isleismore = strpos( $post->post_content, '<!--more-->' );
-									if ( $shop_isleismore ) :
-										the_content();
-										else :
-											the_excerpt();
-										endif;
-										?>
-									</div>
-
-									<?php
-//									if ( ! $shop_isleismore ) {
-//										echo '<div class="post-more">';
-//										echo '<a href="' . esc_url( get_permalink() ) . '" class="more-link">' . esc_html__( 'Read more', 'shop-isle' ) . '</a>';
-//										echo '</div>';
-//									}
-									?>
-
-								</div>
+                            </div>
 								<?php
 
 					}// End while().

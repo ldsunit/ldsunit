@@ -23,17 +23,6 @@ if ( isset( $shop_isle_bg ) && $shop_isle_bg != '' ) {
 
 }
 
-if ( defined( 'WCCM_VERISON' ) ) {
-
-	/* Woocommerce compare list plugin */
-	echo '<section class="module-small wccm-frontpage-compare-list">';
-	echo '<div class="container">';
-	do_action( 'shop_isle_wccm_compare_list' );
-	echo '</div>';
-	echo '</section>';
-
-}
-
 /******  Banners Section */
 $banners_section = get_template_directory() . '/inc/sections/shop_isle_banners_section.php';
 require_once( $banners_section );

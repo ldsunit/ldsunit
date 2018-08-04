@@ -74,9 +74,9 @@ if ( ! function_exists( 'shop_isle_post_meta' ) ) {
 	 */
 	function shop_isle_post_meta() {
 	?>
-		<div class="post-header font-alt">
-			<div class="post-meta"><?php shop_isle_posted_on(); ?></div>
-		</div>
+<!--		<div class="post-header font-alt">-->
+<!--			<div class="post-meta">--><?php //shop_isle_posted_on(); ?><!--</div>-->
+<!--		</div>-->
 	<?php
 	}
 }
